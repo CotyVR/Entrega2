@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* Estructura general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Calibri;
+}
+* header { /* Corresponde al logo de mi empresa + los enlaces entre MIS paginas*/
+  background-color: rgb(188, 185, 185);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+* header .logo_empresa { /* Marco del logo de la empresa */
+  border: 5px solid black;
+}
+* header .menu ul { /* Marco que contiene MIS enlaces del menú */
+  display: flex;
+  list-style: none;
+  gap: 5px;
+  width: 100%;
+  height: auto;
+}
+* header .menu ul li a { /* Botones para cada botón */
+  text-decoration: none;
+  padding: 3px 10px;
+  background-color: greenyellow;
+  border-radius: 20px;
+}
+* header .menu ul li a:hover { /* Cambia el color del botón cuando lo toca el mouse */
+  background-color: black;
+  color: white;
+}
+* body { /* Color de fondo de pantalla. Estoy pensando si lo quiero blanco o de otro color */
+  background-color: rgb(251, 248, 248);
+}
+* footer { /* Corresponde al marco del footer */
+  background-color: black;
+  color: aliceblue;
+  font-family: "Times New Roman";
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Página index */
+div.boxModel { /* Corresponde al margen de index o de inicio*/
+  background-color: aqua;
+  width: 400px;
+  height: auto;
+  margin: 100px auto;
+  border: 2px solid blue;
+  padding: 20px;
+}
+div.boxModel header { /* Borde que contiene la imagen del avatar en index */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 3px solid black;
+}
+div.boxModel h1 { /* marco del "Bienvenido" */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+div.boxModel .divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.boxModel main form { /* Marco del formulario */
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 20px;
+}
+div.boxModel a { /* Futuro boton para ingresar */
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.boxModel a:hover { /* Cambio de color al colocar el Mouse en el boton */
+  background-color: black;
+}
+div.boxModel .no-ingreso { /* Formato de los botones que serian para NO ingresar */
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+div.boxModel .no-ingreso .reset { /* Boton de resetear */
+  background-color: yellow;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+div.boxModel .no-ingreso .forget { /* Link de "Olvido su contraseña?" */
+  background-color: yellow;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=main.css.map */
