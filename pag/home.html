@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control-Home</title>
     <link rel="shortcut icon" href="../img/Logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../scss/main.css"><!-- Estilo en SASS -->
 </head>
 
 <body>
@@ -27,16 +27,15 @@
     </header>
 
     <main>
-        <br>
         <section id="datospersonales">
         <img src="../img/Avatar.jpg" alt="avatar personal">
-        <h1>Nombre</h1> 
-        <h2>Año actual/Dirección</h2>
+        
+        <div class="boxTexto--center">
+            <h1>Nombre</h1> 
+            <h2>Año actual/Dirección</h2>
+        </div>
         </section>
           
-
-        <br><br><br>
-
         <table border="1" cellpadding="5">
             <tr>
                 <th>Estado (completo/incompleto)</th><!-- Encabezado de la tabla -->
@@ -48,16 +47,21 @@
                 <th>Gas</th>
                 <th>Internet</th>
             </tr>
+
             <tr>
-                <td>Completo</td><!-- Fil 1 Col 1 -->
-                <td> <!-- Fil 1 Col 2 (mes)-->
+                <td>
+                    <div id="resumentabla">
+                        <strong><p>Completo</p></strong><!-- Fil 2 Col 1 -->
+                    </div>
+                </td>
+                <td> <!-- Fil 2 Col 2 (mes)-->
                     <nav id="mes">
                     <ul>
-                        <li><a href="./mes.html" target="_self">Mes X año Y</a></li>
+                        <li><a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a></li> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
                     </ul>
                     </nav> 
                 </td>
-                <td>$10</td><!-- Fil 1 Col 3 (Arriendo) -->
+                <td>$10</td><!-- Fil 2 Col 3 (Arriendo) -->
                 <td>$1</td> <!-- GGCC -->
                 <td>$2</td><!-- Luz -->
                 <td>$1</td><!-- Agua -->
